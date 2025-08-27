@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: gcr.io/google-samples/gb-frontend:v5
+        image: wonilinfra/guestbook:14c396a9d2a34578dbd6627037ee7038939479fb
         ports:
         - containerPort: 80
         env:
