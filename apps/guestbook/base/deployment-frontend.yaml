@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: wonilinfra/guestbook:14c396a9d2a34578dbd6627037ee7038939479fb
+        image: wonilinfra/guestbook:41ece3cc602d074855b3a21708b1118a4db8dccf
         ports:
         - containerPort: 80
         env:
