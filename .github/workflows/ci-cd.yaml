@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - "apps/guestbook/**"
+  workflow_dispatch:   # 👈 수동 실행 버튼 활성화
 
 jobs:
   build-and-push:
@@ -39,3 +40,4 @@ jobs:
         git add apps/guestbook/base/deployment-frontend.yaml
         git commit -m "Update image to $IMAGE"
         git push
+
