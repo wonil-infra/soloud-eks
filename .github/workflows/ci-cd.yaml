@@ -40,7 +40,7 @@ jobs:
         git add apps/guestbook/base/deployment-frontend.yaml
         git commit -m "Update image to $IMAGE" || echo "No changes to commit"
 
-    - name: Push changes
+    - name: Push changes safely
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
